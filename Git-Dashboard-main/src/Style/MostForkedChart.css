@@ -1,0 +1,66 @@
+/* MostForkedChart.css */
+
+/* Container styling for the MostForkedChart component */
+.chart-container {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Limit maximum width */
+  margin: 20px auto; /* Center align with spacing */
+  padding: 15px; /* Add padding for content */
+  background-color: #0c0808; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center align text and content */
+  position: relative;
+  left: 20%;
+  margin-top: -30%;
+}
+
+/* Heading styling */
+.chart-container h3 {
+  font-size: 18px; /* Size of the heading text */
+  font-weight: bold; /* Make the heading bold */
+  color: #f1ecec; /* Neutral dark grey color */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Styling for the fallback text when no data is available */
+.chart-container p {
+  font-size: 14px; /* Font size for the fallback message */
+  color: #888; /* Light grey color for the text */
+  margin: 10px 0; /* Add spacing */
+  font-style: italic; /* Italicize the text for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chart-container {
+    max-width: 90%; /* Wider container on smaller screens */
+    padding: 12px; /* Adjust padding */
+    left: 0; /* Reset left positioning for smaller screens */
+    margin-top: 0; /* Adjust margin-top for better alignment */
+  }
+
+  .chart-container h3 {
+    font-size: 16px; /* Slightly smaller heading font */
+  }
+
+  .chart-container p {
+    font-size: 13px; /* Adjust font size for the fallback message */
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    padding: 10px; /* Reduce padding further for smaller devices */
+    max-width: 100%; /* Expand the container to full width */
+    margin: 10px auto; /* Adjust margin for small screens */
+  }
+
+  .chart-container h3 {
+    font-size: 14px; /* Smaller heading font for mobile */
+  }
+
+  .chart-container p {
+    font-size: 12px; /* Smaller font size for the fallback message */
+  }
+}

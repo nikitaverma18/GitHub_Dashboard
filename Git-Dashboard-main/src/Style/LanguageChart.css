@@ -1,0 +1,52 @@
+/* LanguageChart.css */
+
+/* Parent container styling for LanguageChart */
+.chart {
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Optional: Limit maximum width */
+  margin: 20px auto; /* Center the chart with margin */
+  padding: 15px; /* Padding around the chart */
+  background-color: #191010; /* Light background for the chart */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+  text-align: center; /* Center align the heading */
+  position: relative;
+  right: 25%;
+}
+
+/* Chart heading styling */
+.chart h3 {
+  font-size: 18px; /* Adjust font size */
+  font-weight: 600; /* Slightly bolder text */
+  color: #f2e8e8; /* Darker text color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+
+/* Responsive Design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .chart {
+    max-width: 90%; /* Allow chart to occupy more width on smaller screens */
+    padding: 12px; /* Reduce padding for smaller screens */
+    right: 0%; /* Remove the right offset on smaller screens */
+    margin: 20px auto; /* Keep margin consistent for better alignment */
+  }
+
+  .chart h3 {
+    font-size: 16px; /* Adjust heading size for smaller screens */
+  }
+}
+
+/* Further adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+  .chart {
+    max-width: 100%; /* Allow chart to take full width on very small screens */
+    padding: 8px; /* Further reduce padding for very small screens */
+    right: 0; /* Remove the right offset */
+    margin: 10px auto; /* Reduce margin for extra small screens */
+  }
+
+  .chart h3 {
+    font-size: 14px; /* Smaller heading size for extra small screens */
+  }
+}

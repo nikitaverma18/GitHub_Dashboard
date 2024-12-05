@@ -1,0 +1,70 @@
+
+.followers-container {
+  flex: 1; /* Make this section take the remaining space */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 100%;
+  overflow-y: auto; /* Add scroll if necessary */
+}
+
+.followers-container h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.followers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid columns */
+  gap: 15px;
+}
+
+.follower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #0d0a0a;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.follower:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.follower img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  border: 2px solid #259cc8;
+}
+
+.follower a {
+  color: #4ca2af;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.follower a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for FollowersList */
+@media (max-width: 768px) {
+  .profile-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .followers-container {
+    width: 100%;
+  }
+}

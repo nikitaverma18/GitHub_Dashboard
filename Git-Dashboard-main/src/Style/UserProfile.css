@@ -1,0 +1,83 @@
+.profile-layout {
+    display: flex;
+    flex-direction: row; /* Align side-by-side */
+    justify-content: space-between; /* Adjust spacing */
+    align-items: flex-start; /* Align at the top */
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px; /* Space between the two sections */
+  }
+  
+  .profile-container {
+    flex: 0 0 300px; /* Fixed width for the profile */
+    padding: 20px;
+    color: #beb2b2;
+    background: #110a0a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(237, 229, 229, 0.1);
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #27b3ef;
+  }
+  
+  .profile-container h2 {
+    font-size: 1.5rem;
+    color: #f6efef;
+    margin: 10px 0;
+  }
+  
+  .bio, .location, .company {
+    color: #9a9797;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .stats div {
+    text-align: center;
+  }
+  
+  .stats h4 {
+    font-size: 1.2rem;
+    color: #4ea8dc;
+  }
+  
+  .profile-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #3291d4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-link:hover {
+    background-color: #3b778d;
+  }
+  
+  /* Responsive adjustments for UserProfile */
+  @media (max-width: 768px) {
+    .profile-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-container {
+      width: 100%;
+    }
+  }
+  

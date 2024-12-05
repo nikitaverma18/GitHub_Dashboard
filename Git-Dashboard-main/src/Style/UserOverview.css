@@ -1,0 +1,55 @@
+/* UserOverview.css */
+.user-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #0a0707; /* White background for card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(249, 247, 247, 0.1); /* Subtle shadow */
+    margin: 20px 0;
+  }
+  
+  .user-overview > div {
+    text-align: center; /* Center-align the stats and labels */
+    flex: 1; /* Equal width for all items */
+  }
+  
+  .user-overview h3 {
+    font-size: 24px; /* Bold and large for stats */
+    margin: 0;
+    color: #edf0f3; /* Darker text color */
+  }
+  
+  .user-overview p {
+    font-size: 14px; /* Smaller text for labels */
+    color: #1fd3e0; /* Subtle gray */
+    margin: 5px 0 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-overview {
+      flex-wrap: wrap; /* Stack elements on smaller screens */
+      gap: 10px;
+    }
+  
+    .user-overview > div {
+      flex: 0 0 45%; /* Each item takes up 45% of the width */
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-overview {
+      flex-direction: column; /* One column layout for very small screens */
+      align-items: stretch;
+    }
+  
+    .user-overview > div {
+      flex: 1;
+      margin-bottom: 10px;
+    }
+  }
+  

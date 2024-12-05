@@ -1,0 +1,51 @@
+/* PopularChart.css */
+
+/* Container styling for the PopularChart component */
+.container {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Optional: Limit maximum width */
+  margin: 20px auto; /* Center align and add spacing */
+  padding: 15px; /* Padding inside the container */
+  background-color: #0c0707; /* Light background */
+  border-radius: 10px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center align heading and content */
+  position: relative;
+  left: 20%;
+  margin-top: -30%;
+}
+
+/* Styling for the chart heading */
+.container h3 {
+  font-size: 18px; /* Heading font size */
+  font-weight: bold; /* Bold heading */
+  color: #ede2e2; /* Dark text color */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Responsive Design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Expand to occupy more width on smaller screens */
+    padding: 12px; /* Reduce padding for smaller devices */
+    left: 0; /* Reset the left positioning for smaller screens */
+    margin-top: 0; /* Reset the margin-top for better alignment */
+  }
+
+  .container h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Further adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduce padding for very small screens */
+    max-width: 100%; /* Allow the container to take full width */
+    margin: 10px auto; /* Adjust margin for small screens */
+  }
+
+  .container h3 {
+    font-size: 14px; /* Smaller font for headings on extra small screens */
+  }
+}
